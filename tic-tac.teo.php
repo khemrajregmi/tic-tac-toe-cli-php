@@ -24,6 +24,12 @@ class TicTacToe
         }
         echo "\n";
     }
+
+    public function makeMove($row, $col, $player)
+    {
+        $this->board[$row][$col] = $player;
+        $this->currentPlayer = ($player === 'X') ? 'O' : 'X';
+    }
 }
 
 class TicTacToeCLI
