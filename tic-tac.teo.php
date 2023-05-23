@@ -13,6 +13,17 @@ class TicTacToe
         );
         $this->currentPlayer = 'X';
     }
+
+    public function displayBoard()
+    {
+        for ($i = 0; $i < 3; $i++) {
+            for ($j = 0; $j < 3; $j++) {
+                echo $this->board[$i][$j] . " ";
+            }
+            echo "\n";
+        }
+        echo "\n";
+    }
 }
 
 class TicTacToeCLI
