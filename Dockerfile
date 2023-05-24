@@ -2,10 +2,10 @@
 FROM php:8.2
 
 # Set the working directory inside the container
-WORKDIR /src
+WORKDIR /src/tic-tac-toe.php
 
 # Copy the PHP application files to the working directory
-COPY . /src
+COPY . /src/tic-tac-toe.php
 
 # Expose port 80 for web server
 EXPOSE 80
