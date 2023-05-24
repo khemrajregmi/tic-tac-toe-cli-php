@@ -116,7 +116,7 @@ class TicTacToeCLI
         echo "Welcome to TIC TAC TOE Game !\n";
         while (!$this->game->isGameOver()) {
             $this->game->displayBoard();
-            echo "Player {$this->game->getCurrentPlayer()}, Please make your move (row column): i.e. row can be 0 ,1 ,2";
+            echo "Player {$this->game->getCurrentPlayer()}, Please make your move (row column): ";
             $move = explode(" ", trim(fgets(STDIN)));
 
             if (count($move) !== 2 || !is_numeric($move[0]) ||
