@@ -100,6 +100,17 @@ class TicTacToe
         }
         return true;
     }
+
+    public function resetBoard()
+    {
+        $this->board = array(
+            array('-', '-', '-'),
+            array('-', '-', '-'),
+            array('-', '-', '-')
+        );
+        $this->currentPlayer = 'X';
+    }
+
 }
 
 class TicTacToeCLI
@@ -149,6 +160,21 @@ class TicTacToeCLI
             echo "Congratulation !! Player $winner wins!\n";
         } else {
             echo "Try again it's a draw!\n";
+        }
+
+        $this->offernewGame();
+    }
+
+    public function offerNewGame()
+    {
+        echo "Do you want to play again? (yes/no): ";
+        $response = strtolower(trim(fgets(STDIN)));
+
+        if ($response === 'yes') {
+            $this->game->resetBoard();
+            $this->startGame();
+        } else {
+            echo "Thank you for playing Tic-Tac-Toe!\n";
         }
     }
 }
