@@ -9,7 +9,7 @@ run this project
 
 cd /`project_directory`
 
-`docker composer up`
+`docker compose run php`
 
 `docker compose down`
 
