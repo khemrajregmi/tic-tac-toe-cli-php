@@ -1,5 +1,8 @@
 <?php
 
+
+namespace TicTacToe;
+
 require_once 'tic-tac-toe.php';
 
 class TicTacToeCLI

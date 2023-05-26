@@ -1,5 +1,7 @@
 <?php
 
+namespace TicTacToe;
+
 class TicTacToe
 {
     private $board;
