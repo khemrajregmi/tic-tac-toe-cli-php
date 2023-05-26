@@ -57,7 +57,7 @@ class TicTacToeCLI
         $this->offernewGame();
     }
 
-    public function offerNewGame()
+    private function offerNewGame()
     {
         echo "Do you want to play again? (yes/no): ";
         $response = strtolower(trim(fgets(STDIN)));
