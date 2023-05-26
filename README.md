@@ -58,3 +58,8 @@ Note :if you play you gona know :D !! Enjoy !!
 * We use docker Done 
 * We write unit tests Done
 * We use the newest PHP version when possible Done
+
+
+### Run Test Case
+* cd /project_directory/src 
+ run `composer update`
